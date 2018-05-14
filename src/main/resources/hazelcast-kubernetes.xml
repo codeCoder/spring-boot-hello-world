@@ -5,14 +5,14 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <properties>
         <property name="hazelcast.discovery.enabled">true</property>
-        <property name="hazelcast.shutdownhook.enabled">true</property>
+        <property name="hazelcast.shutdownhook.enabled">false</property>
         <property name="hazelcast.jmx">true</property>
         <property name="hazelcast.logging.type">slf4j</property>
 
         <property name="hazelcast.memcache.enabled">true</property>
-        <property name="hazelcast.diagnostics.enabled">true</property>
+        <property name="hazelcast.diagnostics.enabled">false</property>
         <property name="hazelcast.diagnostics.metric.level">info</property>
-        <property name="hazelcast.diagnostics.directory">/tmp/hz-diagnostics</property>
+        <property name="hazelcast.diagnostics.directory">/tmp</property>
 
     </properties>
 

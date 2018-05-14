@@ -5,7 +5,7 @@ metadata:
   labels:
     app: spring-boot-hello-world
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: spring-boot-hello-world
@@ -15,18 +15,18 @@ spec:
         app: spring-boot-hello-world
     spec:
       containers:
-      - image: codecoder/spring-boot-hello-world:8
+      - image: codecoder/spring-boot-hello-world:10
         name: spring-boot-hello-world
-        #ports:
-        # - containerPort: 8080
-            #protocol: TCP
-            #name: application
-          #- containerPort: 5701
-            #protocol: TCP
-            #name: hazelcast
+        ports:
+         - containerPort: 8080
+           protocol: TCP
+           name: application
+         - containerPort: 5701
+           protocol: TCP
+           name: hazelcast
         env:
           - name: spring.profiles.active
             value: hazelcast
-          #- name: HZ_XML_CONFIG
-            #value: hazelcast-kubernetes-restapi.xml
+          - name: HZ_XML_CONFIG
+            value: hazelcast-kubernetes-restapi.xml
 

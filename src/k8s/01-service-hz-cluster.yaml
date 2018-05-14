@@ -6,16 +6,14 @@ metadata:
   name: spring-boot-hello-world-service-cluster
 spec:
   ports:
-    - port: 5701
-      protocol: TCP
+    - protocol: TCP
+      port: 5701
       targetPort: 5701
-    #- protocol: TCP
-    #  port: 5701
-    #  targetPort: 5701
-    #  name: hazelcast
-    #- protocol: TCP
-    #  port: 8080
-    #  targetPort: 8080
-    #  name: application
+      name: hazelcast
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+      name: application
+  type: NodePort
   selector:
     app: spring-boot-hello-world

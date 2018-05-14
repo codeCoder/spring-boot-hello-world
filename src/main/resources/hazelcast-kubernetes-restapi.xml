@@ -10,9 +10,9 @@
         <property name="hazelcast.memcache.enabled">true</property>
 
         <property name="hazelcast.memcache.enabled">true</property>
-        <property name="hazelcast.diagnostics.enabled">true</property>
+        <property name="hazelcast.diagnostics.enabled">false</property>
         <property name="hazelcast.diagnostics.metric.level">info</property>
-        <property name="hazelcast.diagnostics.directory">/tmp/hz-diagnostics</property>
+        <property name="hazelcast.diagnostics.directory">/tmp</property>
 
     </properties>
     <network>
