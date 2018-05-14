@@ -1,0 +1,1 @@
+nc -z -v -w5 spring-boot-hello-world-service-cluster 5701
