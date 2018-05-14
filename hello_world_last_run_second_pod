@@ -1,0 +1,229 @@
+22:02:37,383 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+22:02:37,389 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+22:02:37,389 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/app.jar!/BOOT-INF/classes!/logback.xml]
+22:02:37,468 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@255316f2 - URL [jar:file:/app.jar!/BOOT-INF/classes!/logback.xml] is not of type file
+22:02:37,597 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+22:02:37,598 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+22:02:37,615 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+22:02:37,716 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+22:02:37,716 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+22:02:37,716 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+22:02:37,719 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+22:02:37,719 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+22:02:37,719 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+22:02:37,720 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@41906a77 - Registering current configuration as safe fallback point
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.1.RELEASE)
+
+2018-05-14 22:02:41 [main] INFO  h.w.helloworld.HelloWorldApplication - Starting HelloWorldApplication v0.0.1-SNAPSHOT on spring-boot-hello-world-55b7b4dd68-g42rq with PID 1 (/app.jar started by root in /)
+2018-05-14 22:02:41 [main] INFO  h.w.helloworld.HelloWorldApplication - The following profiles are active: hazelcast
+2018-05-14 22:02:42 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c0369c4: startup date [Mon May 14 22:02:42 GMT 2018]; root of context hierarchy
+2018-05-14 22:02:53 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$95524c29] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-14 22:02:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-05-14 22:02:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-14 22:02:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-05-14 22:02:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-14 22:02:54 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64:/usr/lib/jvm/java-1.8-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-05-14 22:02:54 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-05-14 22:02:54 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 12585 ms
+2018-05-14 22:02:56 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-05-14 22:02:56 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-14 22:02:56 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-14 22:02:56 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-14 22:02:56 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-14 22:02:56 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2018-05-14 22:02:56 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-05-14 22:02:56 [main] INFO  c.h.config.ClasspathXmlConfig - Configuring Hazelcast from 'hazelcast-kubernetes-restapi.xml'.
+2018-05-14 22:02:57 [main] INFO  com.hazelcast.instance.AddressPicker - [LOCAL] [dev] [3.9.3] Prefer IPv4 stack is true.
+2018-05-14 22:02:57 [main] INFO  com.hazelcast.instance.AddressPicker - [LOCAL] [dev] [3.9.3] Picked [172.17.0.11]:5701, using socket ServerSocket[addr=/0.0.0.0,localport=5701], bind any local is true
+2018-05-14 22:02:57 [main] INFO  com.hazelcast.system - [172.17.0.11]:5701 [dev] [3.9.3] Hazelcast 3.9.3 (20180216 - 539b124) starting at [172.17.0.11]:5701
+2018-05-14 22:02:57 [main] INFO  com.hazelcast.system - [172.17.0.11]:5701 [dev] [3.9.3] Copyright (c) 2008-2018, Hazelcast, Inc. All Rights Reserved.
+2018-05-14 22:02:57 [main] INFO  com.hazelcast.system - [172.17.0.11]:5701 [dev] [3.9.3] Configured Hazelcast Serialization version: 1
+2018-05-14 22:02:58 [main] INFO  c.h.s.i.o.impl.BackpressureRegulator - [172.17.0.11]:5701 [dev] [3.9.3] Backpressure is disabled
+2018-05-14 22:02:59 [main] INFO  c.h.s.d.integration.DiscoveryService - [172.17.0.11]:5701 [dev] [3.9.3] Kubernetes Discovery properties: { service-dns: null, service-dns-timeout: 5, service-name: spring-boot-hello-world-service-cluster, service-label: run, service-label-value: spring-boot-hello-world-service-cluster, namespace: default, resolve-not-ready-addresses: false, kubernetes-master: https://kubernetes.default.svc}
+2018-05-14 22:02:59 [main] INFO  c.h.s.d.integration.DiscoveryService - [172.17.0.11]:5701 [dev] [3.9.3] Kubernetes Discovery: Bearer Token { eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImRlZmF1bHQtdG9rZW4tY2Z2cjciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGVmYXVsdCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImZlOTUxOTBhLTU1MGQtMTFlOC04NTUyLTA4MDAyNzU5NGFlYiIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0OmRlZmF1bHQifQ.Y_hIlLR3xA72CjbGbaH3gO8rqqeq1mAkD1B6ITe3m5GlSD_jmAJlF5pba18Ntx5cgnbtHcy8h8WM-72mFD6T1_UPnEjePJzm3jl0nuDpWTau0RT0v3e2jZ7k3fh34s3DfNN3hBxcJENmFaqtPdUCZBQMKOzBdFz5TIIfgzoyVeCYSjum9YRPxa3dhpOnpU3rjwVbTNTxCKB-VMjfnXDuYONOeccEW81APNgVllBxIBe9Jc_uTbG7F1wJtanelrysxOfmniWz5tTH_jV5zOsU-Wcy-eA4dLzMRwo5Uo5kh3KJkrOQSjPEfT5-NiMCqo6N0FbSzhrlswnep9CCoW8PmA }
+2018-05-14 22:03:00 [main] INFO  c.h.s.d.integration.DiscoveryService - [172.17.0.11]:5701 [dev] [3.9.3] Kubernetes Discovery activated resolver: ServiceEndpointResolver
+2018-05-14 22:03:00 [main] INFO  com.hazelcast.instance.Node - [172.17.0.11]:5701 [dev] [3.9.3] Activating Discovery SPI Joiner
+2018-05-14 22:03:00 [main] INFO  c.h.s.i.o.impl.OperationExecutorImpl - [172.17.0.11]:5701 [dev] [3.9.3] Starting 2 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2018-05-14 22:03:00 [main] INFO  c.h.internal.diagnostics.Diagnostics - [172.17.0.11]:5701 [dev] [3.9.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2018-05-14 22:03:01 [main] INFO  com.hazelcast.core.LifecycleService - [172.17.0.11]:5701 [dev] [3.9.3] [172.17.0.11]:5701 is STARTING
+2018-05-14 22:03:02 [hz._hzInstance_1_dev.cached.thread-2] INFO  com.hazelcast.nio.tcp.TcpIpConnector - [172.17.0.11]:5701 [dev] [3.9.3] Connecting to /172.17.0.8:5701, timeout: 0, bind-any: true
+2018-05-14 22:03:02 [hz._hzInstance_1_dev.cached.thread-2] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5701 [dev] [3.9.3] Established socket connection between /172.17.0.11:52967 and /172.17.0.8:5701
+2018-05-14 22:03:08 [hz._hzInstance_1_dev.generic-operation.thread-0] INFO  com.hazelcast.system - [172.17.0.11]:5701 [dev] [3.9.3] Cluster version set to 3.9
+2018-05-14 22:03:08 [hz._hzInstance_1_dev.generic-operation.thread-0] INFO  c.h.internal.cluster.ClusterService - [172.17.0.11]:5701 [dev] [3.9.3] 
+
+Members {size:4, ver:4} [
+	Member [172.17.0.8]:5701 - 96d9f638-9a22-4305-a68c-4e222b10e4aa
+	Member [172.17.0.8]:5702 - 065b6ec2-3996-4230-a186-ebc4e5d6a3a5
+	Member [172.17.0.8]:5703 - b087dfc0-bd6b-4e9e-b0a7-44dd324e8034
+	Member [172.17.0.11]:5701 - a8bc9171-e10f-4c26-9ad6-1a6fc43446ce this
+]
+
+2018-05-14 22:03:08 [hz._hzInstance_1_dev.IO.thread-Acceptor] INFO  com.hazelcast.nio.tcp.TcpIpAcceptor - [172.17.0.11]:5701 [dev] [3.9.3] Accepting socket connection from /172.17.0.8:52937
+2018-05-14 22:03:08 [hz._hzInstance_1_dev.cached.thread-2] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5701 [dev] [3.9.3] Established socket connection between /172.17.0.11:5701 and /172.17.0.8:52937
+2018-05-14 22:03:08 [hz._hzInstance_1_dev.cached.thread-2] INFO  com.hazelcast.nio.tcp.TcpIpConnector - [172.17.0.11]:5701 [dev] [3.9.3] Connecting to /172.17.0.8:5702, timeout: 0, bind-any: true
+2018-05-14 22:03:08 [hz._hzInstance_1_dev.cached.thread-2] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5701 [dev] [3.9.3] Established socket connection between /172.17.0.11:52417 and /172.17.0.8:5702
+2018-05-14 22:03:08 [hz._hzInstance_1_dev.cached.thread-3] INFO  com.hazelcast.nio.tcp.TcpIpConnector - [172.17.0.11]:5701 [dev] [3.9.3] Connecting to /172.17.0.8:5703, timeout: 0, bind-any: true
+2018-05-14 22:03:08 [hz._hzInstance_1_dev.cached.thread-3] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5701 [dev] [3.9.3] Established socket connection between /172.17.0.11:58235 and /172.17.0.8:5703
+2018-05-14 22:03:09 [hz._hzInstance_1_dev.IO.thread-Acceptor] INFO  com.hazelcast.nio.tcp.TcpIpAcceptor - [172.17.0.11]:5701 [dev] [3.9.3] Accepting socket connection from /172.17.0.8:55763
+2018-05-14 22:03:09 [hz._hzInstance_1_dev.cached.thread-2] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5701 [dev] [3.9.3] Established socket connection between /172.17.0.11:5701 and /172.17.0.8:55763
+2018-05-14 22:03:10 [main] INFO  c.h.internal.jmx.ManagementService - [172.17.0.11]:5701 [dev] [3.9.3] Hazelcast JMX agent enabled.
+2018-05-14 22:03:10 [main] INFO  com.hazelcast.core.LifecycleService - [172.17.0.11]:5701 [dev] [3.9.3] [172.17.0.11]:5701 is STARTED
+2018-05-14 22:03:10 [main] INFO  c.h.config.ClasspathXmlConfig - Configuring Hazelcast from 'hazelcast-kubernetes-restapi.xml'.
+2018-05-14 22:03:10 [main] INFO  c.h.config.ClasspathXmlConfig - Configuring Hazelcast from 'hazelcast-kubernetes-restapi.xml'.
+2018-05-14 22:03:11 [main] INFO  com.hazelcast.instance.AddressPicker - [LOCAL] [dev] [3.9.3] Prefer IPv4 stack is true.
+2018-05-14 22:03:11 [main] INFO  com.hazelcast.instance.AddressPicker - [LOCAL] [dev] [3.9.3] Picked [172.17.0.11]:5702, using socket ServerSocket[addr=/0.0.0.0,localport=5702], bind any local is true
+2018-05-14 22:03:11 [main] INFO  com.hazelcast.system - [172.17.0.11]:5702 [dev] [3.9.3] Hazelcast 3.9.3 (20180216 - 539b124) starting at [172.17.0.11]:5702
+2018-05-14 22:03:11 [main] INFO  com.hazelcast.system - [172.17.0.11]:5702 [dev] [3.9.3] Copyright (c) 2008-2018, Hazelcast, Inc. All Rights Reserved.
+2018-05-14 22:03:11 [main] INFO  com.hazelcast.system - [172.17.0.11]:5702 [dev] [3.9.3] Configured Hazelcast Serialization version: 1
+2018-05-14 22:03:11 [main] INFO  c.h.s.i.o.impl.BackpressureRegulator - [172.17.0.11]:5702 [dev] [3.9.3] Backpressure is disabled
+2018-05-14 22:03:11 [main] INFO  c.h.s.d.integration.DiscoveryService - [172.17.0.11]:5702 [dev] [3.9.3] Kubernetes Discovery properties: { service-dns: null, service-dns-timeout: 5, service-name: spring-boot-hello-world-service-cluster, service-label: run, service-label-value: spring-boot-hello-world-service-cluster, namespace: default, resolve-not-ready-addresses: false, kubernetes-master: https://kubernetes.default.svc}
+2018-05-14 22:03:11 [main] INFO  c.h.s.d.integration.DiscoveryService - [172.17.0.11]:5702 [dev] [3.9.3] Kubernetes Discovery: Bearer Token { eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImRlZmF1bHQtdG9rZW4tY2Z2cjciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGVmYXVsdCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImZlOTUxOTBhLTU1MGQtMTFlOC04NTUyLTA4MDAyNzU5NGFlYiIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0OmRlZmF1bHQifQ.Y_hIlLR3xA72CjbGbaH3gO8rqqeq1mAkD1B6ITe3m5GlSD_jmAJlF5pba18Ntx5cgnbtHcy8h8WM-72mFD6T1_UPnEjePJzm3jl0nuDpWTau0RT0v3e2jZ7k3fh34s3DfNN3hBxcJENmFaqtPdUCZBQMKOzBdFz5TIIfgzoyVeCYSjum9YRPxa3dhpOnpU3rjwVbTNTxCKB-VMjfnXDuYONOeccEW81APNgVllBxIBe9Jc_uTbG7F1wJtanelrysxOfmniWz5tTH_jV5zOsU-Wcy-eA4dLzMRwo5Uo5kh3KJkrOQSjPEfT5-NiMCqo6N0FbSzhrlswnep9CCoW8PmA }
+2018-05-14 22:03:11 [main] INFO  c.h.s.d.integration.DiscoveryService - [172.17.0.11]:5702 [dev] [3.9.3] Kubernetes Discovery activated resolver: ServiceEndpointResolver
+2018-05-14 22:03:11 [main] INFO  com.hazelcast.instance.Node - [172.17.0.11]:5702 [dev] [3.9.3] Activating Discovery SPI Joiner
+2018-05-14 22:03:11 [main] INFO  c.h.s.i.o.impl.OperationExecutorImpl - [172.17.0.11]:5702 [dev] [3.9.3] Starting 2 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2018-05-14 22:03:11 [main] INFO  c.h.internal.diagnostics.Diagnostics - [172.17.0.11]:5702 [dev] [3.9.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2018-05-14 22:03:11 [main] INFO  com.hazelcast.core.LifecycleService - [172.17.0.11]:5702 [dev] [3.9.3] [172.17.0.11]:5702 is STARTING
+2018-05-14 22:03:11 [hz._hzInstance_2_dev.cached.thread-2] INFO  com.hazelcast.nio.tcp.TcpIpConnector - [172.17.0.11]:5702 [dev] [3.9.3] Connecting to /172.17.0.8:5701, timeout: 0, bind-any: true
+2018-05-14 22:03:11 [hz._hzInstance_2_dev.cached.thread-3] INFO  com.hazelcast.nio.tcp.TcpIpConnector - [172.17.0.11]:5702 [dev] [3.9.3] Connecting to /172.17.0.11:5701, timeout: 0, bind-any: true
+2018-05-14 22:03:11 [hz._hzInstance_2_dev.cached.thread-2] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5702 [dev] [3.9.3] Established socket connection between /172.17.0.11:42169 and /172.17.0.8:5701
+2018-05-14 22:03:11 [hz._hzInstance_1_dev.IO.thread-Acceptor] INFO  com.hazelcast.nio.tcp.TcpIpAcceptor - [172.17.0.11]:5701 [dev] [3.9.3] Accepting socket connection from /172.17.0.11:55307
+2018-05-14 22:03:11 [hz._hzInstance_1_dev.cached.thread-3] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5701 [dev] [3.9.3] Established socket connection between /172.17.0.11:5701 and /172.17.0.11:55307
+2018-05-14 22:03:11 [hz._hzInstance_2_dev.cached.thread-3] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5702 [dev] [3.9.3] Established socket connection between /172.17.0.11:55307 and /172.17.0.11:5701
+2018-05-14 22:03:21 [hz._hzInstance_1_dev.priority-generic-operation.thread-0] WARN  c.h.i.p.InternalPartitionService - [172.17.0.11]:5701 [dev] [3.9.3] Master version should be greater than ours! Local version: 833, Master version: 832 Master: [172.17.0.8]:5701
+2018-05-14 22:03:25 [hz._hzInstance_2_dev.priority-generic-operation.thread-0] INFO  com.hazelcast.system - [172.17.0.11]:5702 [dev] [3.9.3] Cluster version set to 3.9
+2018-05-14 22:03:25 [hz._hzInstance_2_dev.priority-generic-operation.thread-0] INFO  c.h.internal.cluster.ClusterService - [172.17.0.11]:5702 [dev] [3.9.3] 
+
+Members {size:5, ver:5} [
+	Member [172.17.0.8]:5701 - 96d9f638-9a22-4305-a68c-4e222b10e4aa
+	Member [172.17.0.8]:5702 - 065b6ec2-3996-4230-a186-ebc4e5d6a3a5
+	Member [172.17.0.8]:5703 - b087dfc0-bd6b-4e9e-b0a7-44dd324e8034
+	Member [172.17.0.11]:5701 - a8bc9171-e10f-4c26-9ad6-1a6fc43446ce
+	Member [172.17.0.11]:5702 - 1669f5a6-1fa5-442b-9745-c2e7a014be03 this
+]
+
+2018-05-14 22:03:25 [hz._hzInstance_2_dev.cached.thread-3] INFO  com.hazelcast.nio.tcp.TcpIpConnector - [172.17.0.11]:5702 [dev] [3.9.3] Connecting to /172.17.0.8:5703, timeout: 0, bind-any: true
+2018-05-14 22:03:25 [hz._hzInstance_2_dev.cached.thread-2] INFO  com.hazelcast.nio.tcp.TcpIpConnector - [172.17.0.11]:5702 [dev] [3.9.3] Connecting to /172.17.0.8:5702, timeout: 0, bind-any: true
+2018-05-14 22:03:25 [hz._hzInstance_1_dev.priority-generic-operation.thread-0] INFO  c.h.internal.cluster.ClusterService - [172.17.0.11]:5701 [dev] [3.9.3] 
+
+Members {size:5, ver:5} [
+	Member [172.17.0.8]:5701 - 96d9f638-9a22-4305-a68c-4e222b10e4aa
+	Member [172.17.0.8]:5702 - 065b6ec2-3996-4230-a186-ebc4e5d6a3a5
+	Member [172.17.0.8]:5703 - b087dfc0-bd6b-4e9e-b0a7-44dd324e8034
+	Member [172.17.0.11]:5701 - a8bc9171-e10f-4c26-9ad6-1a6fc43446ce this
+	Member [172.17.0.11]:5702 - 1669f5a6-1fa5-442b-9745-c2e7a014be03
+]
+
+2018-05-14 22:03:25 [hz._hzInstance_2_dev.IO.thread-Acceptor] INFO  com.hazelcast.nio.tcp.TcpIpAcceptor - [172.17.0.11]:5702 [dev] [3.9.3] Accepting socket connection from /172.17.0.8:41563
+2018-05-14 22:03:25 [hz._hzInstance_2_dev.IO.thread-Acceptor] INFO  com.hazelcast.nio.tcp.TcpIpAcceptor - [172.17.0.11]:5702 [dev] [3.9.3] Accepting socket connection from /172.17.0.8:32917
+2018-05-14 22:03:25 [hz._hzInstance_2_dev.cached.thread-3] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5702 [dev] [3.9.3] Established socket connection between /172.17.0.11:47897 and /172.17.0.8:5703
+2018-05-14 22:03:25 [hz._hzInstance_2_dev.cached.thread-3] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5702 [dev] [3.9.3] Established socket connection between /172.17.0.11:5702 and /172.17.0.8:32917
+2018-05-14 22:03:25 [hz._hzInstance_2_dev.cached.thread-1] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5702 [dev] [3.9.3] Established socket connection between /172.17.0.11:5702 and /172.17.0.8:41563
+2018-05-14 22:03:25 [hz._hzInstance_2_dev.cached.thread-2] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5702 [dev] [3.9.3] Established socket connection between /172.17.0.11:39715 and /172.17.0.8:5702
+2018-05-14 22:03:34 [hz._hzInstance_1_dev.HealthMonitor] INFO  c.h.i.diagnostics.HealthMonitor - [172.17.0.11]:5701 [dev] [3.9.3] processors=2, physical.memory.total=2.0G, physical.memory.free=14.6M, swap.space.total=1000.0M, swap.space.free=58.8M, heap.memory.used=105.7M, heap.memory.free=98.3M, heap.memory.total=204.0M, heap.memory.max=446.5M, heap.memory.used/total=51.72%, heap.memory.used/max=23.63%, minor.gc.count=19, minor.gc.time=1609ms, major.gc.count=3, major.gc.time=654ms, load.process=12.00%, load.system=100.00%, load.systemAverage=14.42, thread.count=77, thread.peakCount=77, cluster.timeDiff=-20, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=268, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=1, clientEndpoint.count=0, connection.active.count=6, client.connection.count=0, connection.count=4
+2018-05-14 22:03:35 [main] INFO  c.h.internal.jmx.ManagementService - [172.17.0.11]:5702 [dev] [3.9.3] Hazelcast JMX agent enabled.
+2018-05-14 22:03:35 [main] INFO  com.hazelcast.core.LifecycleService - [172.17.0.11]:5702 [dev] [3.9.3] [172.17.0.11]:5702 is STARTED
+2018-05-14 22:03:35 [hz._hzInstance_2_dev.HealthMonitor] INFO  c.h.i.diagnostics.HealthMonitor - [172.17.0.11]:5702 [dev] [3.9.3] processors=2, physical.memory.total=2.0G, physical.memory.free=56.7M, swap.space.total=1000.0M, swap.space.free=58.6M, heap.memory.used=108.4M, heap.memory.free=95.6M, heap.memory.total=204.0M, heap.memory.max=446.5M, heap.memory.used/total=53.14%, heap.memory.used/max=24.28%, minor.gc.count=19, minor.gc.time=1609ms, major.gc.count=3, major.gc.time=654ms, load.process=11.76%, load.system=100.00%, load.systemAverage=14.42, thread.count=78, thread.peakCount=78, cluster.timeDiff=-20, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=22, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=1, clientEndpoint.count=0, connection.active.count=6, client.connection.count=0, connection.count=4
+2018-05-14 22:03:36 [main] INFO  c.h.config.ClasspathXmlConfig - Configuring Hazelcast from 'hazelcast-kubernetes-restapi.xml'.
+2018-05-14 22:03:36 [main] INFO  com.hazelcast.instance.AddressPicker - [LOCAL] [dev] [3.9.3] Prefer IPv4 stack is true.
+2018-05-14 22:03:36 [main] INFO  com.hazelcast.instance.AddressPicker - [LOCAL] [dev] [3.9.3] Picked [172.17.0.11]:5703, using socket ServerSocket[addr=/0.0.0.0,localport=5703], bind any local is true
+2018-05-14 22:03:36 [main] INFO  com.hazelcast.system - [172.17.0.11]:5703 [dev] [3.9.3] Hazelcast 3.9.3 (20180216 - 539b124) starting at [172.17.0.11]:5703
+2018-05-14 22:03:36 [main] INFO  com.hazelcast.system - [172.17.0.11]:5703 [dev] [3.9.3] Copyright (c) 2008-2018, Hazelcast, Inc. All Rights Reserved.
+2018-05-14 22:03:36 [main] INFO  com.hazelcast.system - [172.17.0.11]:5703 [dev] [3.9.3] Configured Hazelcast Serialization version: 1
+2018-05-14 22:03:36 [main] INFO  c.h.s.i.o.impl.BackpressureRegulator - [172.17.0.11]:5703 [dev] [3.9.3] Backpressure is disabled
+2018-05-14 22:03:36 [main] INFO  c.h.s.d.integration.DiscoveryService - [172.17.0.11]:5703 [dev] [3.9.3] Kubernetes Discovery properties: { service-dns: null, service-dns-timeout: 5, service-name: spring-boot-hello-world-service-cluster, service-label: run, service-label-value: spring-boot-hello-world-service-cluster, namespace: default, resolve-not-ready-addresses: false, kubernetes-master: https://kubernetes.default.svc}
+2018-05-14 22:03:36 [main] INFO  c.h.s.d.integration.DiscoveryService - [172.17.0.11]:5703 [dev] [3.9.3] Kubernetes Discovery: Bearer Token { eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImRlZmF1bHQtdG9rZW4tY2Z2cjciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGVmYXVsdCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImZlOTUxOTBhLTU1MGQtMTFlOC04NTUyLTA4MDAyNzU5NGFlYiIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0OmRlZmF1bHQifQ.Y_hIlLR3xA72CjbGbaH3gO8rqqeq1mAkD1B6ITe3m5GlSD_jmAJlF5pba18Ntx5cgnbtHcy8h8WM-72mFD6T1_UPnEjePJzm3jl0nuDpWTau0RT0v3e2jZ7k3fh34s3DfNN3hBxcJENmFaqtPdUCZBQMKOzBdFz5TIIfgzoyVeCYSjum9YRPxa3dhpOnpU3rjwVbTNTxCKB-VMjfnXDuYONOeccEW81APNgVllBxIBe9Jc_uTbG7F1wJtanelrysxOfmniWz5tTH_jV5zOsU-Wcy-eA4dLzMRwo5Uo5kh3KJkrOQSjPEfT5-NiMCqo6N0FbSzhrlswnep9CCoW8PmA }
+2018-05-14 22:03:36 [main] INFO  c.h.s.d.integration.DiscoveryService - [172.17.0.11]:5703 [dev] [3.9.3] Kubernetes Discovery activated resolver: ServiceEndpointResolver
+2018-05-14 22:03:36 [main] INFO  com.hazelcast.instance.Node - [172.17.0.11]:5703 [dev] [3.9.3] Activating Discovery SPI Joiner
+2018-05-14 22:03:36 [main] INFO  c.h.s.i.o.impl.OperationExecutorImpl - [172.17.0.11]:5703 [dev] [3.9.3] Starting 2 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2018-05-14 22:03:36 [main] INFO  c.h.internal.diagnostics.Diagnostics - [172.17.0.11]:5703 [dev] [3.9.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2018-05-14 22:03:36 [main] INFO  com.hazelcast.core.LifecycleService - [172.17.0.11]:5703 [dev] [3.9.3] [172.17.0.11]:5703 is STARTING
+2018-05-14 22:03:37 [hz._hzInstance_3_dev.cached.thread-2] INFO  com.hazelcast.nio.tcp.TcpIpConnector - [172.17.0.11]:5703 [dev] [3.9.3] Connecting to /172.17.0.11:5701, timeout: 0, bind-any: true
+2018-05-14 22:03:37 [hz._hzInstance_3_dev.cached.thread-2] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5703 [dev] [3.9.3] Established socket connection between /172.17.0.11:33103 and /172.17.0.11:5701
+2018-05-14 22:03:37 [hz._hzInstance_3_dev.cached.thread-3] INFO  com.hazelcast.nio.tcp.TcpIpConnector - [172.17.0.11]:5703 [dev] [3.9.3] Connecting to /172.17.0.8:5701, timeout: 0, bind-any: true
+2018-05-14 22:03:37 [hz._hzInstance_1_dev.IO.thread-Acceptor] INFO  com.hazelcast.nio.tcp.TcpIpAcceptor - [172.17.0.11]:5701 [dev] [3.9.3] Accepting socket connection from /172.17.0.11:33103
+2018-05-14 22:03:37 [hz._hzInstance_1_dev.cached.thread-7] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5701 [dev] [3.9.3] Established socket connection between /172.17.0.11:5701 and /172.17.0.11:33103
+2018-05-14 22:03:37 [hz._hzInstance_3_dev.cached.thread-3] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5703 [dev] [3.9.3] Established socket connection between /172.17.0.11:51973 and /172.17.0.8:5701
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.generic-operation.thread-1] WARN  c.h.i.p.InternalPartitionService - [172.17.0.11]:5703 [dev] [3.9.3] Ignoring received partition table, startup is not completed yet. Sender: [172.17.0.8]:5701
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.priority-generic-operation.thread-0] INFO  com.hazelcast.system - [172.17.0.11]:5703 [dev] [3.9.3] Cluster version set to 3.9
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.priority-generic-operation.thread-0] INFO  c.h.internal.cluster.ClusterService - [172.17.0.11]:5703 [dev] [3.9.3] 
+
+Members {size:6, ver:6} [
+	Member [172.17.0.8]:5701 - 96d9f638-9a22-4305-a68c-4e222b10e4aa
+	Member [172.17.0.8]:5702 - 065b6ec2-3996-4230-a186-ebc4e5d6a3a5
+	Member [172.17.0.8]:5703 - b087dfc0-bd6b-4e9e-b0a7-44dd324e8034
+	Member [172.17.0.11]:5701 - a8bc9171-e10f-4c26-9ad6-1a6fc43446ce
+	Member [172.17.0.11]:5702 - 1669f5a6-1fa5-442b-9745-c2e7a014be03
+	Member [172.17.0.11]:5703 - c41ac3df-f2d1-4ef7-88ca-8cf0afd78b54 this
+]
+
+2018-05-14 22:03:44 [hz._hzInstance_1_dev.generic-operation.thread-0] INFO  c.h.internal.cluster.ClusterService - [172.17.0.11]:5701 [dev] [3.9.3] 
+
+Members {size:6, ver:6} [
+	Member [172.17.0.8]:5701 - 96d9f638-9a22-4305-a68c-4e222b10e4aa
+	Member [172.17.0.8]:5702 - 065b6ec2-3996-4230-a186-ebc4e5d6a3a5
+	Member [172.17.0.8]:5703 - b087dfc0-bd6b-4e9e-b0a7-44dd324e8034
+	Member [172.17.0.11]:5701 - a8bc9171-e10f-4c26-9ad6-1a6fc43446ce this
+	Member [172.17.0.11]:5702 - 1669f5a6-1fa5-442b-9745-c2e7a014be03
+	Member [172.17.0.11]:5703 - c41ac3df-f2d1-4ef7-88ca-8cf0afd78b54
+]
+
+2018-05-14 22:03:44 [hz._hzInstance_2_dev.generic-operation.thread-0] INFO  c.h.internal.cluster.ClusterService - [172.17.0.11]:5702 [dev] [3.9.3] 
+
+Members {size:6, ver:6} [
+	Member [172.17.0.8]:5701 - 96d9f638-9a22-4305-a68c-4e222b10e4aa
+	Member [172.17.0.8]:5702 - 065b6ec2-3996-4230-a186-ebc4e5d6a3a5
+	Member [172.17.0.8]:5703 - b087dfc0-bd6b-4e9e-b0a7-44dd324e8034
+	Member [172.17.0.11]:5701 - a8bc9171-e10f-4c26-9ad6-1a6fc43446ce
+	Member [172.17.0.11]:5702 - 1669f5a6-1fa5-442b-9745-c2e7a014be03 this
+	Member [172.17.0.11]:5703 - c41ac3df-f2d1-4ef7-88ca-8cf0afd78b54
+]
+
+2018-05-14 22:03:44 [hz._hzInstance_2_dev.cached.thread-4] INFO  com.hazelcast.nio.tcp.TcpIpConnector - [172.17.0.11]:5702 [dev] [3.9.3] Connecting to /172.17.0.11:5703, timeout: 0, bind-any: true
+2018-05-14 22:03:44 [hz._hzInstance_2_dev.cached.thread-4] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5702 [dev] [3.9.3] Established socket connection between /172.17.0.11:55137 and /172.17.0.11:5703
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.IO.thread-Acceptor] INFO  com.hazelcast.nio.tcp.TcpIpAcceptor - [172.17.0.11]:5703 [dev] [3.9.3] Accepting socket connection from /172.17.0.11:55137
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.cached.thread-2] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5703 [dev] [3.9.3] Established socket connection between /172.17.0.11:5703 and /172.17.0.11:55137
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.cached.thread-2] INFO  com.hazelcast.nio.tcp.TcpIpConnector - [172.17.0.11]:5703 [dev] [3.9.3] Connecting to /172.17.0.8:5702, timeout: 0, bind-any: true
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.cached.thread-2] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5703 [dev] [3.9.3] Established socket connection between /172.17.0.11:46261 and /172.17.0.8:5702
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.cached.thread-2] INFO  com.hazelcast.nio.tcp.TcpIpConnector - [172.17.0.11]:5703 [dev] [3.9.3] Connecting to /172.17.0.8:5703, timeout: 0, bind-any: true
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.cached.thread-2] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5703 [dev] [3.9.3] Established socket connection between /172.17.0.11:38447 and /172.17.0.8:5703
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.cached.thread-2] INFO  com.hazelcast.nio.tcp.TcpIpConnector - [172.17.0.11]:5703 [dev] [3.9.3] Connecting to /172.17.0.11:5702, timeout: 0, bind-any: true
+2018-05-14 22:03:44 [hz._hzInstance_2_dev.IO.thread-Acceptor] INFO  com.hazelcast.nio.tcp.TcpIpAcceptor - [172.17.0.11]:5702 [dev] [3.9.3] Accepting socket connection from /172.17.0.11:48859
+2018-05-14 22:03:44 [hz._hzInstance_2_dev.cached.thread-6] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5702 [dev] [3.9.3] Established socket connection between /172.17.0.11:5702 and /172.17.0.11:48859
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.cached.thread-2] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5703 [dev] [3.9.3] Established socket connection between /172.17.0.11:48859 and /172.17.0.11:5702
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.IO.thread-Acceptor] INFO  com.hazelcast.nio.tcp.TcpIpAcceptor - [172.17.0.11]:5703 [dev] [3.9.3] Accepting socket connection from /172.17.0.8:43693
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.cached.thread-3] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5703 [dev] [3.9.3] Established socket connection between /172.17.0.11:5703 and /172.17.0.8:43693
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.IO.thread-Acceptor] INFO  com.hazelcast.nio.tcp.TcpIpAcceptor - [172.17.0.11]:5703 [dev] [3.9.3] Accepting socket connection from /172.17.0.8:37403
+2018-05-14 22:03:44 [hz._hzInstance_3_dev.cached.thread-1] INFO  c.h.nio.tcp.TcpIpConnectionManager - [172.17.0.11]:5703 [dev] [3.9.3] Established socket connection between /172.17.0.11:5703 and /172.17.0.8:37403
+2018-05-14 22:03:46 [main] INFO  c.h.internal.jmx.ManagementService - [172.17.0.11]:5703 [dev] [3.9.3] Hazelcast JMX agent enabled.
+2018-05-14 22:03:46 [main] INFO  com.hazelcast.core.LifecycleService - [172.17.0.11]:5703 [dev] [3.9.3] [172.17.0.11]:5703 is STARTED
+2018-05-14 22:03:46 [hz._hzInstance_3_dev.HealthMonitor] INFO  c.h.i.diagnostics.HealthMonitor - [172.17.0.11]:5703 [dev] [3.9.3] processors=2, physical.memory.total=2.0G, physical.memory.free=20.4M, swap.space.total=1000.0M, swap.space.free=62.7M, heap.memory.used=159.3M, heap.memory.free=44.7M, heap.memory.total=204.0M, heap.memory.max=446.5M, heap.memory.used/total=78.10%, heap.memory.used/max=35.68%, minor.gc.count=19, minor.gc.time=1609ms, major.gc.count=3, major.gc.time=654ms, load.process=0.00%, load.system=0.00%, load.systemAverage=18.58, thread.count=113, thread.peakCount=113, cluster.timeDiff=-149, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=100, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=1, clientEndpoint.count=0, connection.active.count=8, client.connection.count=0, connection.count=5
+2018-05-14 22:03:46 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-14 22:03:46 [hz._hzInstance_2_dev.generic-operation.thread-0] WARN  c.h.i.p.InternalPartitionService - [172.17.0.11]:5702 [dev] [3.9.3] Master version should be greater than ours! Local version: 1109, Master version: 1108 Master: [172.17.0.8]:5701
+2018-05-14 22:03:46 [hz._hzInstance_3_dev.priority-generic-operation.thread-0] WARN  c.h.i.p.InternalPartitionService - [172.17.0.11]:5703 [dev] [3.9.3] Master version should be greater than ours! Local version: 1109, Master version: 1108 Master: [172.17.0.8]:5701
+2018-05-14 22:03:46 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c0369c4: startup date [Mon May 14 22:02:42 GMT 2018]; root of context hierarchy
+2018-05-14 22:03:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello],methods=[GET],produces=[text/text]}" onto public java.lang.String hello.world.helloworld.HelloWorldEndpoint.helloWorld(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-14 22:03:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-14 22:03:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-14 22:03:47 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-14 22:03:47 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-14 22:03:48 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-05-14 22:03:48 [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-05-14 22:03:48 [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-05-14 22:03:48 [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-14 22:03:49 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-05-14 22:03:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-05-14 22:03:49 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-05-14 22:03:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-05-14 22:03:49 [main] INFO  h.w.helloworld.HelloWorldApplication - Started HelloWorldApplication in 71.205 seconds (JVM running for 72.818)
+2018-05-14 22:03:56 [hz._hzInstance_2_dev.HealthMonitor] INFO  c.h.i.diagnostics.HealthMonitor - [172.17.0.11]:5702 [dev] [3.9.3] processors=2, physical.memory.total=2.0G, physical.memory.free=18.9M, swap.space.total=1000.0M, swap.space.free=32.0M, heap.memory.used=151.4M, heap.memory.free=51.1M, heap.memory.total=202.5M, heap.memory.max=446.5M, heap.memory.used/total=74.76%, heap.memory.used/max=33.91%, minor.gc.count=21, minor.gc.time=1952ms, major.gc.count=3, major.gc.time=654ms, load.process=100.00%, load.system=0.00%, load.systemAverage=19.48, thread.count=131, thread.peakCount=131, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=395, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=1, clientEndpoint.count=0, connection.active.count=8, client.connection.count=0, connection.count=5
+2018-05-14 22:03:56 [hz._hzInstance_1_dev.HealthMonitor] INFO  c.h.i.diagnostics.HealthMonitor - [172.17.0.11]:5701 [dev] [3.9.3] processors=2, physical.memory.total=2.0G, physical.memory.free=61.0M, swap.space.total=1000.0M, swap.space.free=30.8M, heap.memory.used=153.0M, heap.memory.free=49.5M, heap.memory.total=202.5M, heap.memory.max=446.5M, heap.memory.used/total=75.55%, heap.memory.used/max=34.26%, minor.gc.count=21, minor.gc.time=1952ms, major.gc.count=3, major.gc.time=654ms, load.process=0.00%, load.system=0.00%, load.systemAverage=19.48, thread.count=131, thread.peakCount=131, cluster.timeDiff=-1, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=2, executor.q.priorityOperation.size=2, operations.completed.count=541, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=1, clientEndpoint.count=0, connection.active.count=7, client.connection.count=0, connection.count=5
+2018-05-14 22:04:01 [hz._hzInstance_2_dev.priority-generic-operation.thread-0] WARN  c.h.i.p.InternalPartitionService - [172.17.0.11]:5702 [dev] [3.9.3] Master version should be greater than ours! Local version: 1337, Master version: 1335 Master: [172.17.0.8]:5701
+2018-05-14 22:04:01 [hz._hzInstance_3_dev.generic-operation.thread-1] WARN  c.h.i.p.InternalPartitionService - [172.17.0.11]:5703 [dev] [3.9.3] Master version should be greater than ours! Local version: 1337, Master version: 1335 Master: [172.17.0.8]:5701
