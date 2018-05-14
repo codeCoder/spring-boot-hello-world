@@ -16,6 +16,8 @@
 
     </properties>
     <network>
+        <port>5701</port>
+
         <join>
             <!-- deactivate normal discovery -->
             <multicast enabled="false"/>

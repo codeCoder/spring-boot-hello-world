@@ -15,7 +15,7 @@ spec:
         app: spring-boot-hello-world
     spec:
       containers:
-      - image: codecoder/spring-boot-hello-world:10
+      - image: codecoder/spring-boot-hello-world:12
         name: spring-boot-hello-world
         ports:
          - containerPort: 8080

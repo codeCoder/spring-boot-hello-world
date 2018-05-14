@@ -18,7 +18,7 @@
 
     <network>
 
-        <port auto-increment="true">5701</port>
+        <port>5701</port>
 
         <join>
             <multicast enabled="false"/>
