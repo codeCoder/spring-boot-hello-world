@@ -12,7 +12,6 @@ import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 
 @EnableCaching
@@ -73,13 +72,12 @@ public class HazelcastConfiguration {
     }
 
     @Bean("hazelCastCacheManager")
-    @Primary
-    public CacheManager cacheManager() {
-        return new HazelcastCacheManager(hazelcastInstance());
+    public CacheManager cacheManager(HazelcastInstance hazelcastInstance) {
+        return new HazelcastCacheManager(hazelcastInstance);
     }
 
     @Bean
-    public Cache dateCache() {
-        return cacheManager().getCache("dateCache");
+    public Cache dateCache(HazelcastInstance hazelcastInstance) {
+        return cacheManager(hazelcastInstance).getCache("dateCache");
     }
 }
