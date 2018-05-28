@@ -77,7 +77,7 @@ public class HazelcastConfiguration {
     }
 
     @Bean
-    public Cache dateCache(HazelcastInstance hazelcastInstance) {
-        return cacheManager(hazelcastInstance).getCache("dateCache");
+    public Cache dateCache(CacheManager cacheManager) {
+        return cacheManager.getCache("dateCache");
     }
 }
