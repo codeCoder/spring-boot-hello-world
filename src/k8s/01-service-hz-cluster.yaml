@@ -1,3 +1,5 @@
+# headless service
+# for more info see: https://kubernetes.io/docs/concepts/services-networking/service/#headless-services
 apiVersion: v1
 kind: Service
 metadata:
@@ -5,15 +7,11 @@ metadata:
     run: spring-boot-hello-world-service-cluster
   name: spring-boot-hello-world-service-cluster
 spec:
+  clusterIP: None
   ports:
     - protocol: TCP
       port: 5701
       targetPort: 5701
       name: hazelcast
-    - protocol: TCP
-      port: 8080
-      targetPort: 8080
-      name: application
-  type: NodePort
   selector:
     app: spring-boot-hello-world
